@@ -20,6 +20,10 @@ class Ui_Dialog(object):
         self.title.setObjectName("title")
         self.go = QtWidgets.QPushButton(Dialog)
         self.go.setGeometry(QtCore.QRect(430, 390, 191, 71))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(14)
+        self.go.setFont(font)
         self.go.setObjectName("go")
 
         self.retranslateUi(Dialog)

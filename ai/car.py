@@ -3,7 +3,6 @@ import requests
 import base64
 import cv2 as cv
 import numpy as np
-
 def vehicle_detect(img):
     request_url = "https://aip.baidubce.com/rest/2.0/image-classify/v1/vehicle_detect"
     _, encoded_image = cv.imencode('.jpg', img)
@@ -48,6 +47,7 @@ def vehicle_detect(img):
                 #print(car_result)
                 if car_result:
                      car_name = car_result[0]['name']
+
                      # 如果识别结果为'非车类'，则跳过标注
                      #if car_name != '非车类':
                      car_names.append((car_name))

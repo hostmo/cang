@@ -35,6 +35,12 @@
      <height>71</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>进入</string>
    </property>

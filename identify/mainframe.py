@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets, QtGui, QtCore
 from identify.mdui import Ui_Dialog
-from identify.idenframe import IdenDialog
+from identify.loginframe import LoginDialog
 import data.resources_rc
 
 class MainDialog(QtWidgets.QMainWindow):
@@ -28,6 +28,6 @@ class MainDialog(QtWidgets.QMainWindow):
                                                 transformMode=QtCore.Qt.SmoothTransformation))
 
     def goin(self):
-        self.monitorframe = IdenDialog()
+        self.monitorframe = LoginDialog()
         self.monitorframe.show()
         self.close()
